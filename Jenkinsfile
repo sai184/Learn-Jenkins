@@ -11,7 +11,7 @@ pipeline {
 
       steps{
        sh 'echo one'
-       # mail bcc: 'sainagarjuna184@gmail.com', body: 'hello', cc: 'sainagarjuna184@gmail.com', from: '', replyTo: '', subject: 'reports', to: 'sainagarjuna184@gmail.com'
+
        }
     }
 
