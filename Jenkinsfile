@@ -32,16 +32,7 @@ pipeline {
        sh 'echo one'
        sh 'echo ${SAMPLE_URL}'
        sh 'echo  $SSH'
-
-       }
-    }
-
-       stage('two') {
-        steps{
-        sh 'echo two'
-
-       }
-
+       sh 'echo $person'
     }
    }
 
