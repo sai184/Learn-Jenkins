@@ -4,6 +4,7 @@ pipeline {
   }
   environment {
     SAMPLE_URL ="https://cricbuzz.com"
+    SSH = credentials("ssh")
   }
   stages {
 
@@ -11,6 +12,8 @@ pipeline {
 
       steps{
        sh 'echo one'
+       sh 'echo ${SAMPLE_URL}'
+       sh 'echo  $SSH'
 
        }
     }
@@ -18,7 +21,7 @@ pipeline {
        stage('two') {
         steps{
         sh 'echo two'
-        sh 'echo ${SAMPLE_URL}'
+
        }
 
     }
