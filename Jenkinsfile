@@ -6,6 +6,10 @@ pipeline {
     SAMPLE_URL ="https://cricbuzz.com"
     SSH = credentials("ssh")
   }
+
+   options {
+       ansiColor('xterm')
+     }
   stages {
 
     stage('one') {
