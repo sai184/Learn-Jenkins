@@ -1,4 +1,4 @@
-pipeline {
+ pipeline {
   agent {
     node { label 'workstation' }
   }
@@ -41,4 +41,4 @@ pipeline {
     echo  'sending email'
       }
     }
-}
+ }
